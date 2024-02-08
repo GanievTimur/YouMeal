@@ -1,15 +1,22 @@
 :root {
-	--container-width: 1200px;
+	--container-width: 1290px;
 	--container-padding: 15px;
 
 	--font-main: 'Poppins', sans-serif;
 	--font-accent: 'Playfair Display', serif;
 
-	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
+	--page-bg: rgb(255, 255, 255);
+	--text-color: rgb(0, 0, 0);
+	--orange: rgb(255, 171, 8);
+	--dark-orange: rgb(255, 112, 32);
+	--black: rgb(0, 0, 0);
+	--dark-white: rgb(249, 249, 249);
+	--silver: rgb(242, 242, 243);
+	
+	
+	// --accent: #ac182c;
 
-    --laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
+    // --laptop-size: 1199px;
+	// --tablet-size: 959px;
+	// --mobile-size: 599px;
 }
