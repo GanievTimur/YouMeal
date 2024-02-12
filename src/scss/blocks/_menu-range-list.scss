@@ -1,0 +1,79 @@
+.menu-range-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-range-item {
+    margin: 5px 0px 5px 0px;
+
+    &:last-child {
+        margin-right: auto;
+    }
+
+    &:not(:first-child) {
+        margin-left: 25px;
+    }
+
+    &:hover .menu-range-item__btn {
+        outline: 1px solid var(--dark-orange);
+    }
+}
+
+.menu-range-item__btn {
+    position: relative;
+    padding: 8px 14px 8px 46px;
+    border-radius: 50px;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: var(--white);
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 25px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+    }
+}
+
+.burgers::after {
+    background-image: url('../img/burgers-icon.png');
+}
+
+.snacks:after {
+    background-image: url('../img/snacks-icon.png');
+}
+
+.hot-dogs:after {
+    background-image: url('../img/hot-dogs-icon.png');
+}
+
+.combo:after {
+    background-image: url('../img/combo-icon.png');
+}
+
+.shaurma:after {
+    background-image: url('../img/shaurma-icon.png');
+}
+
+.pizza:after {
+    background-image: url('../img/pizza-icon.png');
+}
+
+.wok:after {
+    background-image: url('../img/wok-icon.png');
+}
+
+.dessert:after {
+    background-image: url('../img/dessert-icon.png');
+}
+
+.sauces:after {
+    background-image: url('../img/sauces-icon.png');
+}
