@@ -1,5 +1,11 @@
 .menu {
     max-width: var(--container-width);
-    margin: 0 5%;
+    margin: 0 auto;
     margin-top: 35px;
+    width: 100%;
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
 }

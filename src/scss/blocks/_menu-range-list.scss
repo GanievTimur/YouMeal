@@ -2,17 +2,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 48px;
 }
 
 .menu-range-item {
     margin: 5px 0px 5px 0px;
 
     &:last-child {
-        margin-right: auto;
-    }
-
-    &:not(:first-child) {
-        margin-left: 25px;
+        margin-right: 4.7%;
     }
 
     &:hover .menu-range-item__btn {
@@ -40,6 +37,10 @@
         height: 24px;
         background-repeat: no-repeat;
     }
+}
+
+.menu-range-item .menu-range-item__btn .active-btn {
+    background-color: var(--dark-orange);
 }
 
 .burgers::after {

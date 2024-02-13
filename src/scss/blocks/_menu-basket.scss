@@ -1,0 +1,42 @@
+.menu-basket {
+    width: 23%;
+    height: max-content;
+    background-color: var(--white);
+    border-radius: 18px;
+    padding: 21px 16px;
+    margin-top: 73px;
+}
+
+.menu-basket__wrapper {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-basket__title {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.menu-basket__quantity {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 6px;
+    background-color: var(--silver);
+    padding: 2px 16px;
+}
+
+.menu-basket__info {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
