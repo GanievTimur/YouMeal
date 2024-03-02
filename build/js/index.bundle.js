@@ -1,0 +1,1 @@
+!function(){let e=document.querySelectorAll(".menu-range-item button"),t=document.querySelectorAll(".menu-assortment__wrapper");e.forEach((a=>{a.onclick=()=>{e.forEach((e=>{e.classList.remove("active-btn")})),a.classList.add("active-btn"),t.forEach((e=>{a.dataset.filter===e.dataset.filter?e.classList.remove("visually-hidden"):e.classList.add("visually-hidden")}))}}))}();

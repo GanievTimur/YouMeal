@@ -78,3 +78,8 @@
 .sauces:after {
     background-image: url('../img/sauces-icon.png');
 }
+
+.active-btn {
+    background-color: var(--orange);
+    transition: 0.2s;
+}

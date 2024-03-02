@@ -1,19 +1,19 @@
 <section class="menu">
     <ul class="menu-range-list">
         <li class="menu-range-item">
-            <button type="button" class="menu-range-item__btn burgers active-btn">Бургеры</button>
+            <button type="button" class="menu-range-item__btn burgers active-btn" data-filter="burgers">Бургеры</button>
         </li>
         <li class="menu-range-item">
-            <button type="button" class="menu-range-item__btn snacks">Закуски</button>
+            <button type="button" class="menu-range-item__btn snacks" data-filter="snacks">Закуски</button>
         </li>
         <li class="menu-range-item">
-            <button type="button" class="menu-range-item__btn hot-dogs">Хот-доги</button>
+            <button type="button" class="menu-range-item__btn hot-dogs" data-filter="hotdogs">Хот-доги</button>
         </li>
         <li class="menu-range-item">
-            <button type="button" class="menu-range-item__btn combo">Комбо</button>
+            <button type="button" class="menu-range-item__btn combo" data-filter="combo">Комбо</button>
         </li>
         <li class="menu-range-item">
-            <button type="button" class="menu-range-item__btn shaurma">Шаурма</button>
+            <button type="button" class="menu-range-item__btn shaurma" data-filter="shaurma">Шаурма</button>
         </li>
         <li class="menu-range-item">
             <button type="button" class="menu-range-item__btn pizza">Пицца</button>
@@ -37,7 +37,7 @@
             <p class="menu-basket__info">Тут пока пусто :(</p>
         </div>
         <div class="menu-assortment">
-            <div class="menu-assortment__wrapper burgers">
+            <div class="menu-assortment__wrapper" data-filter="burgers">
                 <h2 class="menu-assortment__title">Бургеры</h2>
                 <ul class="menu-assortment__list">
                     <li class="menu-assortment__item">
@@ -80,6 +80,152 @@
                         <p class="menu-assortment__item-price">560₽</p>
                         <p class="menu-assortment__item-name">Итальянский</p>
                         <p class="menu-assortment__item-weight">510г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-assortment__wrapper visually-hidden" data-filter="snacks">
+                <h2 class="menu-assortment__title">Закуски</h2>
+                <ul class="menu-assortment__list">
+                    <li class="menu-assortment__item">
+                        <img src="../img/nachos-card.jpeg" alt="Начос">
+                        <p class="menu-assortment__item-price">250₽</p>
+                        <p class="menu-assortment__item-name">Начос</p>
+                        <p class="menu-assortment__item-weight">220г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/potato-card.jpeg" alt="Картошка фри">
+                        <p class="menu-assortment__item-price">245₽</p>
+                        <p class="menu-assortment__item-name">Картошка фри</p>
+                        <p class="menu-assortment__item-weight">180г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/onion-rings-card.jpeg" alt="Луковые кольца">
+                        <p class="menu-assortment__item-price">230₽</p>
+                        <p class="menu-assortment__item-name">Луковые кольца</p>
+                        <p class="menu-assortment__item-weight">160г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-assortment__wrapper visually-hidden" data-filter="hotdogs">
+                <h2 class="menu-assortment__title">Хот-доги</h2>
+                <ul class="menu-assortment__list">
+                    <li class="menu-assortment__item">
+                        <img src="../img/homemade-hot-dog-card.jpeg" alt="Домашний хот-дог">
+                        <p class="menu-assortment__item-price">290₽</p>
+                        <p class="menu-assortment__item-name">Домашний хот-дог</p>
+                        <p class="menu-assortment__item-weight">250г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/burning-hot-dog-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">239₽</p>
+                        <p class="menu-assortment__item-name">Жгучий хот-дог</p>
+                        <p class="menu-assortment__item-weight">245г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/classic-hot-dog-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">220₽</p>
+                        <p class="menu-assortment__item-name">Классический хот-дог</p>
+                        <p class="menu-assortment__item-weight">215г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-assortment__wrapper" data-filter="combo">
+                <h2 class="menu-assortment__title">Комбо</h2>
+                <ul class="menu-assortment__list">
+                    <li class="menu-assortment__item">
+                        <img src="../img/meat-bomb-card.jpeg" alt="Бургер Мясная бомба">
+                        <p class="menu-assortment__item-price">689₽</p>
+                        <p class="menu-assortment__item-name">Мясная бомба</p>
+                        <p class="menu-assortment__item-weight">520г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/nachos-card.jpeg" alt="Начос">
+                        <p class="menu-assortment__item-price">250₽</p>
+                        <p class="menu-assortment__item-name">Начос</p>
+                        <p class="menu-assortment__item-weight">220г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/potato-card.jpeg" alt="Картошка фри">
+                        <p class="menu-assortment__item-price">245₽</p>
+                        <p class="menu-assortment__item-name">Картошка фри</p>
+                        <p class="menu-assortment__item-weight">180г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/onion-rings-card.jpeg" alt="Луковые кольца">
+                        <p class="menu-assortment__item-price">230₽</p>
+                        <p class="menu-assortment__item-name">Луковые кольца</p>
+                        <p class="menu-assortment__item-weight">160г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/super-cheese-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">550₽</p>
+                        <p class="menu-assortment__item-name">Супер сырный</p>
+                        <p class="menu-assortment__item-weight">512г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/cheese-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">639₽</p>
+                        <p class="menu-assortment__item-name">Сытный</p>
+                        <p class="menu-assortment__item-weight">580г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/Heavy-blow-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">480₽</p>
+                        <p class="menu-assortment__item-name">Тяжелый удар</p>
+                        <p class="menu-assortment__item-weight">470г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/timeless-classic-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">450₽</p>
+                        <p class="menu-assortment__item-name">Вечная классика</p>
+                        <p class="menu-assortment__item-weight">450г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/Italian-card.jpeg" alt="Бургер Супер сырный">
+                        <p class="menu-assortment__item-price">560₽</p>
+                        <p class="menu-assortment__item-name">Итальянский</p>
+                        <p class="menu-assortment__item-weight">510г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-assortment__wrapper visually-hidden" data-filter="shaurma">
+                <h2 class="menu-assortment__title">Шаурма</h2>
+                <ul class="menu-assortment__list">
+                    <li class="menu-assortment__item">
+                        <img src="../img/nachos-card.jpeg" alt="Начос">
+                        <p class="menu-assortment__item-price">250₽</p>
+                        <p class="menu-assortment__item-name">Начос</p>
+                        <p class="menu-assortment__item-weight">220г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/potato-card.jpeg" alt="Картошка фри">
+                        <p class="menu-assortment__item-price">245₽</p>
+                        <p class="menu-assortment__item-name">Картошка фри</p>
+                        <p class="menu-assortment__item-weight">180г</p>
+                        <button class="menu-assortment__item-btn">Добавить</button>
+                    </li>
+                    <li class="menu-assortment__item">
+                        <img src="../img/onion-rings-card.jpeg" alt="Луковые кольца">
+                        <p class="menu-assortment__item-price">230₽</p>
+                        <p class="menu-assortment__item-name">Луковые кольца</p>
+                        <p class="menu-assortment__item-weight">160г</p>
                         <button class="menu-assortment__item-btn">Добавить</button>
                     </li>
                 </ul>
