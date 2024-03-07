@@ -3,7 +3,9 @@ html {
 }
 
 body {
+	position: relative;
 	background-color: var(--dark-white);
 	color: var(--text-color);
     font-family: var(--font-main);
+	// overflow: hidden;
 }
