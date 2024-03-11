@@ -8,7 +8,7 @@
 }
 
 .menu-basket__wrapper {
-    margin-bottom: 16px;
+    padding-bottom: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,4 +39,100 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 130%;
+}
+
+.menu-basket__list {
+    border-bottom: 1px solid var(--silver);
+    margin-bottom: 16px;
+}
+
+.menu-basket__item {
+    display: flex;
+    align-items: center;
+    padding: 16px 0px;
+    border-top: 1px solid var(--silver);
+}
+
+.menu-basket__item-img {
+    width: 64px;
+    height: 52px;
+    border-radius: 8px;
+    margin-right: 6px;
+}
+
+.menu-basket__item-title {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.menu-basket__item-weight {
+    color: rgb(177, 177, 177);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.menu-basket__item-price {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.menu-basket__item-clicker {
+    height: 40px;
+}
+
+.menu-basket__item-info {
+    margin-right: auto;
+}
+
+.menu-basket__order-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.menu-basket__btn {
+    width: 100%;
+    padding: 11px 0px;
+    border-radius: 12px;
+    background: var(--dark-orange);
+    font-family: var(--font-main);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+
+.menu-basket__dilivery-info {
+    position: relative;
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left: 32px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        width: 24px;
+        height: 24px;
+        transform: translate(0%, -50%);
+        background-image: url("../img/free-delivery-icon.png");
+    }
 }

@@ -80,7 +80,28 @@
                 <h3 class="menu-basket__title">Корзина</h3>
                 <span class="menu-basket__quantity">0</span>
             </div>
-            <p class="menu-basket__info">Тут пока пусто :(</p>
+            <p class="menu-basket__info visually-hidden">Тут пока пусто :(</p>
+            <ul class="menu-basket__list">
+                <li class="menu-basket__item">
+                    <div class="menu-basket__item-img"><img src="../img/meat-bomb-card.jpeg" alt="Бургер Мясная бомба"></div>
+                    <div class="menu-basket__item-info">
+                        <h3 class="menu-basket__item-title">Супер сырный</h3>
+                        <p class="menu-basket__item-weight">512г</p>
+                        <p class="menu-basket__item-price">550₽</p>
+                    </div>
+                    <div class="menu-basket__item-clicker">
+                        <button class="menu-basket__item-clicker-minus">-</button>
+                        <span class="menu-basket__item-clicker-quantity">1</span>
+                        <button class="menu-basket__item-clicker-plus">+</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu-basket__order-price">
+                <p class="menu-basket__order-price-text">Итого</p>
+                <p class="menu-basket__order-price-calculation">1279₽</p>
+            </div>
+            <button class="menu-basket__btn">Оформить заказ</button>
+            <p class="menu-basket__dilivery-info">Бесплатная доставка</p>
         </div>
         <div class="menu-assortment">
             <div class="menu-assortment__wrapper" data-filter="burgers">
@@ -324,8 +345,8 @@
             <div class="modal__order-wrapper">
                 <div class="modal__order-img"></div>
                 <div class="modal__order-description">
-                    <div class="modal__order-description-info">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
-                    <div class="modal__order-description-compound">Состав:<br>Пшеничная булочка<br>Котлета из говядины<br>Красный лук<br>Листья салата<br>Соус горчичный</div>
+                    <div class="modal__order-description-info">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса&nbsp;покорит вас своей сочностью, а хрустящие листья салата добавят&nbsp;свежести.</div>
+                    <div class="modal__order-description-compound"><span>Состав:</span><br>Пшеничная булочка<br>Котлета из говядины<br>Красный лук<br>Листья салата<br>Соус горчичный</div>
                     <div class="modal__order-description-calories"></div>
                 </div>
             </div>
@@ -335,7 +356,7 @@
                 <span class="modal__order-clicker-quantity">1</span>
                 <button class="modal__order-clicker-plus">+</button>
             </div>
-            <strong class="modal__order-price"></strong>
+            <span class="modal__order-price"></span>
         </div>
     </div>
 </section>

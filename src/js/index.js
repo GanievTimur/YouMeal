@@ -20,6 +20,7 @@ btnRange.forEach (btn => {
 });
 
 //Cards popup
+
 let modalBg = document.querySelector(".modal");
 let modalPage = document.querySelector(".modal-wrapper");
 let btnAddPopup = document.querySelectorAll(".menu-assortment__item-btn");
@@ -43,6 +44,24 @@ btnAddPopup.forEach (btnpopup => {
     }
 });
 
+//Clicker
+
+let quantity = document.querySelector('.modal__order-clicker-quantity');
+let btnPlus = document.querySelector('.modal__order-clicker-plus');
+let btnMinus = document.querySelector('.modal__order-clicker-minus');
+
+let count = 1;
+
+btnPlus.onclick = () => {
+    ++count
+    quantity.textContent = count;
+}
+btnMinus.onclick = () => {
+    if (count > 1) {
+        --count
+        quantity.textContent = count;
+    }
+}
 
 ///Modal
 
@@ -50,4 +69,44 @@ let modalCloseBtn = document.querySelector(".modal__close-btn");
 
 modalCloseBtn.onclick = () => {
     modalBg.classList.toggle("visually-hidden");
+    quantity.textContent = 1;
+    count = 1;
+}
+
+document.onkeydown = (e) => {
+    if (!modalBg.classList.contains("visually-hidden")) {
+        if (e.code == "Escape" || e.code == "Backspace") {
+            modalBg.classList.add("visually-hidden");
+            quantity.textContent = 1;
+            count = 1;
+        }
+    }
+};
+
+//Basket
+
+let basketaddBtn = document.querySelector(".modal__order-btn");
+let basketaddTitle = document.querySelector(".modal__order-title");
+let basketList = document.querySelector(".menu-basket__list");
+let basketItemCreater = document.querySelector(".menu-basket__item");
+let basketImg = document.querySelector(".menu-basket__item-img");
+let basketTitle = document.querySelector(".menu-basket__item-title");
+let basketItemWeight = document.querySelector(".menu-basket__item-weight");
+let basketItemPrice = document.querySelector(".menu-basket__item-price");
+let basketClickerQuantity = document.querySelector(".menu-basket__item-clicker-quantity");
+
+basketaddBtn.onclick = () => {
+    let modalImgClone = document.querySelector(".modal__order-img img").cloneNode(true)
+    console.log(modalImgClone)
+    let basketCloneContent = basketItemCreater.cloneNode(true);
+    basketTitle.textContent = basketaddTitle.textContent;
+    basketItemWeight.textContent = orderModalCalories.textContent;
+    basketItemPrice.textContent = orderModalPrice.textContent;
+    basketClickerQuantity.textContent = quantity.textContent;
+    if (document.querySelector(".menu-basket__item-img img")) {
+        document.querySelector(".menu-basket__item-img img").remove();
+    }
+    basketImg.appendChild(modalImgClone);
+    basketList.appendChild(basketCloneContent);
+    modalBg.classList.add("visually-hidden");
 }
